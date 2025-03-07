@@ -1,0 +1,25 @@
+
+.dogBox {
+    grid-area: dogBox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: start;
+    gap: 30px;
+    margin-top: 15px;
+    
+}
+
+@keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.loading{
+    animation: rotate360 2s linear infinite;
+    font-size: 300px;
+    text-align: center;
+  }

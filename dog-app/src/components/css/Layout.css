@@ -1,0 +1,89 @@
+header{
+    grid-area: header;
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: chocolate;
+  h1{
+    color: beige;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 110px;
+
+  }
+  nav{
+    display: flex;
+    gap: 15px;
+    a{
+        color: beige;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+  }
+ 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "header header"
+                         "sideBar dogBox";
+}
+
+.sidebar {
+    grid-area: sideBar;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: beige;
+    box-shadow: 2px 0 8px 1px gray;
+    a {
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: chocolate;
+    }
+    a:hover {
+        text-decoration: underline;
+        
+    }
+}
+.userBox{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  text-decoration: none;
+  width: 160px;
+  background-color: beige;
+  text-align: center;
+  color: black;
+  height: 40px;
+ text-align: center;
+ align-items: center;
+ h3{
+  padding: 6px;
+  margin: 0;
+ }
+  margin: 0;
+  &:hover {
+      width: 100%;
+      background-color: rgba(62, 115, 221, 0.1);
+      transition: 0.3s ease;
+      box-sizing: border-box;
+    }
+  
+    &:active {
+      color: greenyellow;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 1px solid gray;
+      box-sizing: border-box;
+    }
+}

@@ -1,0 +1,14 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+}
+.active{
+    color: blue;
+    text-decoration-line: underline;
+}
+h1{
+    text-align: center;
+}
+
